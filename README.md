@@ -1,21 +1,24 @@
-# lver
-[![build status](https://secure.travis-ci.org/thlorenz/lver.png)](http://travis-ci.org/thlorenz/lver)
+# lver [![build status](https://secure.travis-ci.org/thlorenz/lver.png)](http://travis-ci.org/thlorenz/lver)
 
 Returns latest published version of a given npm package.
 
-```js
-// TODO
+```sh
+➝  lver concat-stream
+1.0.1
 ```
 
-## Status
+```js
+var lver = require('lver');
+lver('concat-stream', function (err, version) {
+  if (err) return console.error(err);
+  console.log(version);  
+});
 
-Nix, Nada, Nichevo, Nothing --> go away!
+```
+
 ## Installation
 
     npm install lver
-
-## API
-
 
 ## License
 
