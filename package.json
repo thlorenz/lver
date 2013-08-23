@@ -1,6 +1,6 @@
 {
   "name": "lver",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "Returns latest published version of a given npm package.",
   "main": "index.js",
   "bin": "bin/lver.js",

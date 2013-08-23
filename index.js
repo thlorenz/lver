@@ -15,7 +15,7 @@ var go = module.exports = function (packname, cb) {
         var pack = eval('(function () { return ' + code + '})()');
 
         var version = pack.version || (pack.versions && pack.versions.pop());
-        if (!version) cb(new Error('Unable to determine latest version of ' + packname));
+        if (!version) return cb(new Error('Unable to determine latest version of ' + packname));
         cb(null, version);
       } catch (e) {
         cb(e);
